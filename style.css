@@ -1,0 +1,148 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.headerOptions{
+    background-color: rgb(156, 178, 123);
+    float:left;
+    width:18%;
+    border-style: none;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 1.667%;
+    margin-top: 1%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    transition: top ease 0.5s;
+    display:flex;
+    top:0;
+    
+}
+a:link{
+  color:brown;
+  text-decoration: none;
+}
+a:visited{
+  color:brown;
+  text-decoration: none;
+}
+a:hover{
+  color:brown;
+  font-size:larger;
+}
+.headerOptions:hover{
+    top:-20px;
+  background-color: rgb(173, 216, 230);
+}
+.grass:hover{
+    top:-20px;
+  background-color:rgb(173, 216, 230);
+  
+    width:200px;
+    height: 200px;
+  margin:0%;
+}
+.grass2:hover{
+    top:-20px;
+  background-color: yellow;
+  
+    width:200px;
+    height: 200px;
+  margin:0%;
+  
+}
+
+.grass{
+    background-color: rgb(156, 178, 123);
+    float:left;
+    width:25%;
+    height: 50%;
+    border-style: none;
+    border-radius: 100%;
+    color:brown;
+    text-align: center;
+    margin-left:3.125%;
+    margin-right:3.125%;
+    margin-top: 6.25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    transition: top ease 0.5s;
+    display:flex;
+    top:0;
+  font-family:impact;
+}
+
+.grass2{
+    float:left;
+    width:25%;
+    height: 50%;
+    border-style: none;
+    border-radius: 100%;
+    color:wheat;
+    text-align: center;
+    margin-left:3.125%;
+    margin-right:3.125%;
+    margin-top: 6.25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    transition: top ease 0.5s;
+    display:flex;
+    top:0;
+  background-image:  url("https://www.africansafariwildlifepark.com/content/uploads/Giraffe-resized.png");
+  background-repeat: no-repeat, no-repeat;
+background-position: right, left; 
+  background-size:contain;
+  font-family:impact;
+}
+
+.middle{
+    float:left;
+    width:90%;
+    height: 25%;
+    border-radius: 15px;
+    border-color: brown;
+    color:brown;
+    text-align: center;
+    margin-left: 6.25%;
+    margin-top: 6.25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Avantgarde;
+    font-size:100%;
+}
+.middle2{
+    background-color: wheat;
+    float:left;
+    width:90%;
+    height: 60%;
+    border-radius: 15px;
+    border-color: brown;
+    color:brown;
+    text-align: center;
+    margin-left: 6.25%;
+    margin-top: 6.25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Avantgarde;
+    font-size:100%;
+}
+
+.titleCard{
+    height: 100px; 
+    width:100%; 
+    border-style: none; 
+    border-radius: 15px;
+    font-size: 200%;
+    text-align:center;
+}

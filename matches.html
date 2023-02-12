@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background-color: rgb(250, 218, 221);">
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+
+</body>
+
+<div>
+  <div class="titleCard">
+    <p style="font-size: 75px; margin-top:0; margin-bottom: 0;">
+
+    </p>
+  </div>
+</div>
+
+
+
+<div style="aspect-ratio: 200/100;">
+  <div style="height:100%">
+    <div class="grass">
+      <p><a href="index.html">Home</a></p>
+    </div>
+    <div class="grass">
+      <p><a href="yourList.html">Your Lists</a></p>
+    </div>
+    <div class="grass">
+      <p><a href="browse.html">Browse</a></p>
+    </div>
+    <div class="middle2">
+      <p>here would be match options with the ability to accept or deny matches according to grocery-shopping similarity</p>
+    </div>
+    <div class="grass">
+      <p><a href="matches.html">Matches</a></p>
+    </div>
+    <div class="grass2">
+      <p>Save the Giraffes</p>
+    </div>
+    <div class="grass">
+      <p><a href="profile.html">Profile</a></p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+  // API URL's for Demo
+  let getStoreDetailsURL = "https://apimdev.wakefern.com/mockexample/V1/getStoreDetails"
+  let getItemDetailsURL = "https://apimdev.wakefern.com/mockexample/V1/getItemDetails";
+
+  // Build Request Function
+  function callAPI() {
+
+    $.ajax({
+      cache: false,
+      url: "https://apimdev.wakefern.com/mockexample/V1/getStoreDetails",  // Set URL Here
+      method: "GET",  //Set Method Here
+      dataType: "json",
+      crossDomain: true,
+      CORS: true,
+      async: true,
+      headers: {  // Set Headers Here
+        'Ocp-Apim-Subscription-Key': '4ae9400a1eda4f14b3e7227f24b74b44',
+        'accept': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST,OPTIONS',
+        'Access-Control-Allow-Headers': 'X-Requested-With,content-type,Authorization,Ocp-Apim-Subscription-Key'
+      },
+
+      // 2 - Set Success Actions Here
+      success: function (data) {
+
+        //Store JSON into a variable
+        responseJSON = JSON.stringify(data);
+        console.log(responseJSON)
+
+      },
+      // 3 - Set Fail Actions Here
+      // Error handling in web dev generally does not involve a log file.
+      // This section should include feedback to the user of the website saying something went wrong
+      // Production code should not print on the console
+      // Development code can print in the console for debugging reasons
+      error: function (error) {
+        console.log(error);
+      }
+    });
+  }
+
+  // /getItemDetails Request
+  function getItemDetails() {
+
+    // 1 - Make AJAX Call
+    $.ajax({
+      cache: false,
+      url: "https://apimdev.wakefern.com/mockexample/V1/getItemDetails",  // Set URL Here
+      method: "GET",  //Set Method Here
+      dataType: "json",
+      crossDomain: true,
+      CORS: true,
+      async: true,
+      headers: {  // Set Headers Here
+        'Ocp-Apim-Subscription-Key': '4ae9400a1eda4f14b3e7227f24b74b44',
+        'accept': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST,OPTIONS',
+        'Access-Control-Allow-Headers': 'X-Requested-With,content-type,Authorization,Ocp-Apim-Subscription-Key'
+      },
+
+      // 2 - Set Success Actions Here
+      success: function (data) {
+
+        //Store JSON into a variable
+        responseJSON = JSON.stringify(data);
+        console.log(responseJSON)
+
+      },
+      // 3 - Set Fail Actions Here
+      // Error handling in web dev generally does not involve a log file.
+      // This section should include feedback to the user of the website saying something went wrong
+      // Production code should not print on the console
+      // Development code can print in the console for debugging reasons
+      error: function (error) {
+        console.log(error);
+      }
+    });
+
+    // Call API Requests
+    //getStoreDetails();  - TO GET STORE DETAILS
+    //getItemDetails()    - TO GET ITEM DETAILS
+  }
+
+
+        // Call API Requests
+
+</script>
+
+
+</html>
