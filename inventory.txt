@@ -1,0 +1,20 @@
+upc, description, department, price, store discount, loyalty discount, digital coupon
+Dry black beans, 16 oz, 1.42, 100, 8.39, 0.5, .15, .45
+123456, Chicken drumsticks, Grocery, 7.39, 0.5, .15, .25
+839355, Passionfruit iced tea, Grocery, 3.48, .15, .25, .15
+097624, Baby carrots, Grocery, 1.24, 0.0, .25, .30
+438295, Romaine lettuce, Grocery, 2.73, .25, .25, 1.3
+256743, Whole wheat bread, Grocery, 1.88, 1.4, .25, .50
+246509, Pepperoni hot pockets, Grocery, 13.13, 0.3, 0.4, .34
+245876, Navel oranges,Grocery, 4.98, 0.0, 0.4, .65
+436788, Bananas, Grocery, 1.25, 0.0, 0.4, .30
+096748, Ground beef, Grocery, 9.82, 0, 0.4, .24
+469874, White rice, Grocery, 1.62, .57, 0.4, .25
+467209, Silken tofu,Grocery , 11.99, .25, 0.3, .56
+436976, Firm tofu, Grocery, 9.99, .34, 0.3, .78
+095843, Dry pinto beans,Grocery, 1.92, 0.0, 0.3, .46
+249764, Sriracha sauce, Grocery, 9.98, .25, 0.3, .65
+406734, Eggs, 18 count, Grocery, .50, 0.3, .65
+459367, Eggplant, Grocery, 1.27, .60, 0.3, .05
+034986, Sugar, Grocery, 2.94, .64, 0.3, .56
+354960, Frozen broccoli, Grocery, 0.98, 0.2, 0.3
